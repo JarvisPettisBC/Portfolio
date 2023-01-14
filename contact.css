@@ -273,7 +273,7 @@ h3{
     bottom: 700px;
 
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .phone_number{
         display: none;
     }
@@ -297,7 +297,7 @@ h3{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        bottom: 600px;
+        bottom: 500px;
         right: 0;
 
     }
@@ -325,6 +325,7 @@ h3{
         position: relative;
         margin-bottom: 27%;
         bottom: 650px;
+        display: none;
         
     }
 }
