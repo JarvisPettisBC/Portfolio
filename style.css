@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+    color: rgb(212,175,55);
+
+    text-align: center;
+
+    user-select: none;
+}
+
+body {
+    /* background-image: url(https://media.giphy.com/media/RlwF2vFb4y7bDnWvcO/giphy.gif); */
+    background-image: url(https://media.giphy.com/media/26n6G8lRMOrYC6rFS/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    overflow: hidden;
+    font-size: 30pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50%;
+    text-align: center;
+    white-space: nowrap;
+    word-wrap: break-word;
+    width: 22%;
+    color: rgb(212,175,5);
+    margin-left: 39%;
+    letter-spacing: .15em;
+    animation:
+        typing 6.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        
+ 
+
+}
+
+@keyframes typing {
+    from{width: 0}
+    to{ width: 20%}
+      
+}
+@keyframes blink-caret {
+    from,to{border-color: transparent;}
+
+}
+
+
+h2{
+    font-size: 30pt;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    width: 40%;
+    color: rgb(212,175,5);
+    margin-left: 30%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(252, 251, 251);
+    
+}
+.wrapper,label{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#box:checked~label{
+    left: 90%;
+    transform: translateY(-50%);
+}
+.wrapper label{
+    z-index: 1;
+    transition: .4s ease-in;
+}
+.wrapper label #button{
+    background: rgb(212,175,5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    width: 75px;
+    height: 70px;
+    
+
+}
+label #button i{
+    color: rgb(82,81,83);
+    transition: transform .2s linear;
+    margin: auto;
+    font-size: 30px;
+}
+#box:checked ~ label #button i::before{
+    content: '\f00d';
+}
+.wrapper .navs{
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .4s ease-in;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    background: rgb(64,64,64);
+    padding: 0 60px 0 0;
+    border-radius: 50px;
+    
+}
+#box:checked ~ .navs{
+    transform: scaleX(1);
+}
+.navs ul{
+    list-style: none;
+    display: flex;
+    padding: 20px 5px;
+}
+.navs ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(212,175,5);
+    font-size: 15px;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+#box{
+    display: none;
+}
+.navs ul li a:hover{
+    background: #262626;
+    border-radius: 50px;
+    color:#fff
+}
+.about{
+    background-image: url(images/big\ galaxy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contact_border{
+    height: 93vh;
+    width: 50%;
+    margin: 30;
+    border: 2px groove rgba(64, 67, 9, 0.84);
+    margin-left: 50%;
+    margin-top: 0;
+    position: relative;
+    top: -10%;
+    outline-style: groove;
+    outline-color: rgb(253, 255, 254);
+}
+h3{
+    text-align: center;
+    font-size: 5vh;
+    font-family: sans-serif;
+    color: snow;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(14, 13, 13);
+    position: relative;
+    top: -25pt;
+}
+.skills{
+    background-image: none ;
+}
+
+@media screen and (max-width:600px){
+    #text1,
+#text2{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 20pt;
+    color: rgb(212,175,55);
+
+    text-align: center;
+
+    user-select: none;
+    }
+    
+    h1 {
+        overflow: hidden;
+        font-size: 10pt;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 50%;
+        text-align: center;
+        white-space: nowrap;
+        word-wrap: break-word;
+        width: 33%;
+        color: rgb(212,175,5);
+        margin-left: 39%;
+  
+     
+    
+    }
+    h2{
+        font-size: 10pt;
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+        word-wrap: break-word;
+        width: 40%;
+        color: rgb(212,175,5);
+        margin-left: 30%;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(252, 251, 251);
+    }
+    .wrapper label #button{
+        background: rgb(212,175,5);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        width: 25px;
+        height: 20px;
+    }
+    .wrapper label #button{
+        background: rgb(212,175,5);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        width: 25px;
+        height: 20px;
+    }
+    label #button i{
+        color: rgb(82,81,83);
+        transition: transform .2s linear;
+        margin: 0;
+        font-size: 15px;
+    }
+    label #button i{
+        color: rgb(82,81,83);
+        transition: transform .2s linear;
+        margin: 0;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    body{
+        overflow: visible;
+        background-repeat: repeat;
+    }
+    .navs ul{
+        list-style: none;
+        display: flex;
+        width: 10%;
+    }
+    .wrapper{
+        width: 20%;
+        margin-right: 10%;
+    }
+    .navs ul li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: rgb(212,175,5);
+        font-size: 7px;
+        margin: 0 10px;
+        padding: 10px 20px;
+    }
+}
