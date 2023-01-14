@@ -273,42 +273,58 @@ h3{
     bottom: 700px;
 
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .phone_number{
         display: none;
     }
     .g_icon{
         width: 45px;
         height: 30px;
-        bottom: 300px;
-        right: 97px;
+        bottom: 400px;
+        right: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
 
     }
     .github{
         width: 60px;
         height: 55px;
-        bottom: 420px;
+        /* bottom: 800px;
         right: 100px;
+        align-content: center; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 600px;
+        right: 0;
 
     }
     .linkedin{
         height:25px;
         width: 25px;
         overflow: visible;
-        bottom: 250px;
-        right: 100px;
+        /* bottom: 250px;
+        right: 100px; */
         position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 250px;
+        right: 0;
     }
     #contact-card{
-        font-size: 40px;
+        font-size: 30px;
         color: rgb(212, 175, 5);
-        display: inline;
+        display: flex;
         text-align: center;
         width: 50%;
         margin-left: 47%;
         height: 100px;
         position: relative;
         margin-bottom: 27%;
-        bottom: 700px;
+        bottom: 650px;
+        
     }
 }
